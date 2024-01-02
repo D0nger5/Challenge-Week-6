@@ -1,4 +1,4 @@
-// Pull highscores from local storage and display on the highscore page
+// Retriving highscores from local storage anad rendering them on the highscores page
 const highscoresOl = document.getElementById("highscores");
 
 let getScores = JSON.parse(localStorage.getItem("highscores"));
@@ -16,5 +16,4 @@ const clearHighscore = document.getElementById("clear")
 clearHighscore.addEventListener("click", () => {
     highscoresOl.innerHTML = "";
     localStorage.clear("userScores");
-    
 });
