@@ -1,4 +1,4 @@
-// Retriving highscores from local storage anad rendering them on the highscores page
+// Retriving highscores from local storage and display on highscores page
 const highscoresOl = document.getElementById("highscores");
 
 let getScores = JSON.parse(localStorage.getItem("highscores"));
